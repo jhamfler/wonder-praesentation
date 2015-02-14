@@ -63,7 +63,7 @@
 %\usecolortheme{dove}
 %\usecolortheme{fly}
 %\usecolortheme{lily}
-%\usecolortheme{orchid}
+\usecolortheme{orchid}
 %\usecolortheme{rose}
 %\usecolortheme{seagull}
 %%%\usecolortheme{seahorse}
@@ -78,6 +78,11 @@
 \usepackage{verbatim} % für Mehrzeilen-Kommentare
 \usepackage[english, ngerman]{babel} % deutsche sprache
 \usepackage{graphicx} % Allows including images
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{textcomp}
+\usepackage{multicol}
+\usepackage{acronym}
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage[utf8x]{inputenc}
 \usepackage{listings}               % Quellcode einbinden und formatieren
@@ -98,14 +103,16 @@
     %stringstyle=\ttfamily\color{black},
     numberstyle=\tiny,              % Textgröße der Zeilennummern
     stepnumber=1,                   % Angezeigte Zeilennummern
-    numbersep=5pt,                  % Abstand zw. Zeilennummern und Code
-    aboveskip=15pt,                 % Abstand oberhalb des Codes
-    belowskip=11pt,                 % Abstand unterhalb des Codes
+    numbersep=10pt,                  % Abstand zw. Zeilennummern und Code
+    aboveskip=0pt,                 % Abstand oberhalb des Codes
+    belowskip=0pt,                 % Abstand unterhalb des Codes
     captionpos=b,                   % Position der Überschrift
-    linewidth=15.8cm,               % TODO \textwidth-2em
+    linewidth=8.3cm,               % TODO \textwidth-2em
     xleftmargin=10pt,               % Linke Einrückung
     frame=single,                   % Rahmentyp
     breaklines=true,                % Umbruch langer Zeilen
+    prebreak={\rotatebox[origin=c]{270}{$\curvearrowright$}},  %% Vor Zeilenumbruch Zeichen setzen
+    breakautoindent=true         %% umbrochene Zeilen einrücken
     showstringspaces=false          % Spezielles Zeichen für Leerzeichen
 }
 
@@ -168,19 +175,45 @@ Hochschule für Telekommunikation Leipzig \\ % Your institution for the title pa
 	\begin{itemize}[<+->]
 		\item Remote identity bekommt korrekten \texttt{messagingStub}
 	\end{itemize}
-	\includegraphics[scale=0.35,centered]{pictures/anruf}
+	\includegraphics[scale=0.365,centered]{pictures/anruf1}
 \end{frame}
 
 \subsection{Rückruf}
 \begin{frame}
-	\frametitle{}
+	\frametitle{Rückruf}
 	\begin{itemize}[<+->]
-		\item Remote identity bekommt korrekten \texttt{messagingStub}
+		\item Remote identity behält nach hangup den \texttt{messagingStub} %(\texttt{conversation.bye})
 	\end{itemize}
-	\includegraphics[scale=0.35,centered]{pictures/rueckruf}
+	\includegraphics[scale=0.365,centered]{pictures/anruf2}
 \end{frame}
 
+\subsection{Fehlerbehebung}
+\begin{frame}
+	\frametitle{Fehlerbehebung}
+	\begin{itemize}[<+->]
+		\item Im remote participant
+	\end{itemize}
 
+	\begin{exampleblock}{Conversation.prototype.acceptInvitation}
+	\lstinputlisting[language=html,	linewidth=\textwidth,frame=none]{src/conv.proto.acc.txt}
+	\end{exampleblock}
+
+	\begin{exampleblock}{Conversation.prototype.bye}
+	\lstinputlisting[language=html,	linewidth=\textwidth,frame=none]{src/conv.proto.bye.txt}
+	\end{exampleblock}
+
+	
+	
+%	\begin{lstlisting}[caption=Conversation.prototype.acceptInvitation] 
+%	toIdentity.originalStub = toIdentity.messagingStub;	
+%	toidentity.messagingStub = that.myParticipant.identity.messagingStub;
+%	\end{lstlisting}
+	
+%	\begin{lstlisting}[caption=Conversation.prototype.bye]
+%	element.identity.messagingStub = element.identity.originalStub;
+%	\end{lstlisting}
+
+\end{frame}
 
 
 
