@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.27)  14 FEB 2015 16:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.27)  14 FEB 2015 23:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1179,19 +1179,54 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 )
 (./src/conv.proto.acc.txt) (./src/conv.proto.bye.txt) [7
 
-] [8
+]
+Package epstopdf Info: Source file: <pictures/fix1.eps>
+(epstopdf)                    date: 2015-02-14 19:05:25
+(epstopdf)                    size: 204577 bytes
+(epstopdf)             Output file: <pictures/fix1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-14 19:05:35
+(epstopdf)                    size: 55263 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/fix1-eps-converte
+d-to.pdf pictures/fix1.eps>
+(epstopdf)             \includegraphics on input line 211.
+Package epstopdf Info: Output file is already uptodate.
 
-] [9
+<pictures/fix1-eps-converted-to.pdf, id=268, 842.14626pt x 541.02126pt>
+File: pictures/fix1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pictures/fix1-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/fix1-eps-converted-to.pdf used on input line 
+211.
+(pdftex.def)             Requested size: 307.38725pt x 197.47523pt.
+ [8
+
+ <./pictures/fix1-eps-converted-to.pdf>] [9
+
+]
+
+! LaTeX Error: File `pictures/fix2' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 \end{frame}
+                 
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[10
 
 ]
 \openout4 = `tlabs-stub.vrb'.
 
+ (./tlabs-stub.vrb) [11
 
-(./tlabs-stub.vrb) [10
+] [12
 
-] [11
-
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [12
+ </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [13
 
 ]
 \tf@nav=\write7
@@ -1203,42 +1238,45 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 \tf@snm=\write9
 \openout9 = `tlabs-stub.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
  (./tlabs-stub.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 372.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
 Package rerunfilecheck Info: File `tlabs-stub.out' has not changed.
-(rerunfilecheck)             Checksum: B45D3E7E050AE52A5BD89D23A19FEA34;398.
+(rerunfilecheck)             Checksum: A88A465F5BDB9C1F75B16576395AA6FE;384.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 372.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
  ) 
 Here is how much of TeX's memory you used:
- 19947 strings out of 493304
- 350408 string characters out of 6139870
- 483232 words of memory out of 5000000
- 22876 multiletter control sequences out of 15000+600000
+ 19966 strings out of 493304
+ 350732 string characters out of 6139870
+ 483425 words of memory out of 5000000
+ 22890 multiletter control sequences out of 15000+600000
  13628 words of font info for 51 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,15n,63p,399b,1661s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/symbols/msbm10.pfb>
-Output written on tlabs-stub.pdf (12 pages, 219843 bytes).
+ 49i,15n,66p,399b,1661s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Navigation14} has been referenced but does not ex
+ist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on tlabs-stub.pdf (13 pages, 276302 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 410 compressed objects within 5 object streams
- 33 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,3 +1,16 @@
-\begin{lstlisting}[linewidth=0.90\textwidth=small]
-asdada
+\frametitle{Lösung}
+\begin{itemize}
+\item \texttt{*.bye} und \texttt{*.close} nicht geeignet
+\item Beide nutzen jedoch die \texttt{leave}-Methode
+\end{itemize}
+
+\begin{exampleblock}{Participant.prototype.leave}
+\begin{lstlisting}[linewidth=1.0\textwidth=small]
+this.identity.messagingStub=this.identity.originalStub;
 \end{lstlisting}
+\end{exampleblock}
+
+\begin{itemize}
+\item Recall jetzt in jeder Kombination möglich
+\item Da originaler \texttt{messagingStub} gespeichert wird, muss kein erneuter Download erfolgen
+\end{itemize}

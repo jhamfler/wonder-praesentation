@@ -4,6 +4,6 @@
 \beamer@sectionintoc {2}{Problembetrachtung}{5}{0}{2}
 \beamer@subsectionintoc {2}{1}{Anruf}{5}{0}{2}
 \beamer@subsectionintoc {2}{2}{R\IeC {\"u}ckruf}{6}{0}{2}
-\beamer@subsectionintoc {2}{3}{Fehlerbehebung}{7}{0}{2}
-\beamer@sectionintoc {3}{Protokollspezifikation}{8}{0}{3}
-\beamer@subsectionintoc {3}{1}{Protokollformat}{8}{0}{3}
+\beamer@sectionintoc {3}{Fehlerbehebung}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Teill\IeC {\"o}sung}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{L\IeC {\"o}sung}{10}{0}{3}

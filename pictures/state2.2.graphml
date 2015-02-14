@@ -348,7 +348,7 @@ Participant<y:LabelModel>
     <node id="n19">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="36.0" x="734.75" y="462.50895467836256"/>
+          <y:Geometry height="30.0" width="36.0" x="734.75" y="492.50895467836256"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="38.412109375" x="-1.2060546875" y="6.015625">stubB<y:LabelModel>
@@ -365,7 +365,7 @@ Participant<y:LabelModel>
     <node id="n20">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="36.0" x="229.0" y="486.26169383572557"/>
+          <y:Geometry height="30.0" width="36.0" x="229.0" y="492.50895467836256"/>
           <y:Fill color="#FF0000" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="38.412109375" x="-1.2060546875" y="6.015625">stubB<y:LabelModel>
@@ -383,7 +383,7 @@ Participant<y:LabelModel>
       <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="36.0" x="780.8815117575762" y="462.50895467836256"/>
+          <y:Geometry height="30.0" width="36.0" x="734.75" y="454.1779389207868"/>
           <y:Fill color="#FF0000" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="38.388671875" x="-1.1943359375" y="6.015625">stubA<y:LabelModel>
@@ -400,7 +400,7 @@ Participant<y:LabelModel>
     <node id="n22">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="36.0" x="174.77259636363635" y="462.50895467836256"/>
+          <y:Geometry height="30.0" width="36.0" x="229.0" y="454.1779389207868"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="38.388671875" x="-1.1943359375" y="6.015625">stubA<y:LabelModel>
