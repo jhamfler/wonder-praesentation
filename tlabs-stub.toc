@@ -1,9 +1,13 @@
 \beamer@endinputifotherversion {3.24pt}
 \select@language {ngerman}
 \beamer@sectionintoc {1}{Anforderungen}{3}{0}{1}
-\beamer@sectionintoc {2}{Problembetrachtung}{5}{0}{2}
-\beamer@subsectionintoc {2}{1}{Anruf}{5}{0}{2}
-\beamer@subsectionintoc {2}{2}{R\IeC {\"u}ckruf}{6}{0}{2}
+\beamer@sectionintoc {2}{Problembetrachtung}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Begriffskl\IeC {\"a}rung}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Anruf}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{R\IeC {\"u}ckruf}{6}{0}{2}
 \beamer@sectionintoc {3}{Fehlerbehebung}{7}{0}{3}
-\beamer@subsectionintoc {3}{1}{Teill\IeC {\"o}sung}{7}{0}{3}
-\beamer@subsectionintoc {3}{2}{L\IeC {\"o}sung}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Teill\IeC {\"o}sung 1}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{Teill\IeC {\"o}sung 2}{14}{0}{3}
+\beamer@subsectionintoc {3}{3}{L\IeC {\"o}sung}{20}{0}{3}
+\beamer@sectionintoc {4}{Zusatzaufgabe}{22}{0}{4}
+\beamer@sectionintoc {5}{Zusammenfassung}{23}{0}{5}

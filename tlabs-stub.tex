@@ -152,47 +152,145 @@ Hochschule für Telekommunikation Leipzig \\ % Your institution for the title pa
 \begin{frame}
 	\frametitle{Anforderungen}
 	\begin{block}{Aufgabe}
-		\begin{itemize}[<2->]
+		\begin{itemize}
 			\item Rückruffunktionalität ermöglichen
-			\item Zuweisung des korrekten Messaging-Stubs beim Rückruf
+			\item Robustheit testen
+			\item Zuweisung des korrekten \texttt{messagingStub}s beim Rückruf
 		\end{itemize}
 	\end{block}
 	\begin{block}{Zusatzaufgabe}
-		\begin{itemize}[<2->]
-			\item Binden des Stubs an eine Conversation
+		\begin{itemize}
+			\item Binden des \texttt{messagingStubs} an eine Conversation
 		\end{itemize}
 	\end{block}
-	\pause
 \end{frame}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \section{Problembetrachtung}
+\subsection{Begriffsklärung}
+\begin{frame}
+	\frametitle{Begriffsklärung}
+	\begin{itemize}
+		\item Rückrufproblem tritt nur bei unterschiedlichen Domains / Messaging-Servern auf
+		\item Zwei participants auf gleichem Server sind nicht betroffen
+		\item \texttt{messagingStub} ist ein Objekt zum wrappen von \texttt{messagingStub}-Implementierungen
+	\end{itemize}
+	\begin{exampleblock}{messagingStub Beispiel}
+		\includegraphics[scale=0.47,centered]{pictures/messagingStub}
+	\end{exampleblock}
+	\begin{exampleblock}{no-messagingStub Beispiel}
+		\includegraphics[scale=0.47,centered]{pictures/nomsgstub}
+	\end{exampleblock}
+\end{frame}
+
 \subsection{Anruf}
 \begin{frame}
 	\frametitle{}
-	\begin{itemize}[<+->]
-		\item Remote identity bekommt korrekten \texttt{messagingStub}
-	\end{itemize}
 	\includegraphics[scale=0.365,centered]{pictures/anruf1}
+	\begin{itemize}
+		\item Remote \texttt{identity} bekommt korrekten \texttt{messagingStub}
+		\item Eigener \texttt{messagingStub} wird beim Angerufenen kopiert
+	\end{itemize}
+
 \end{frame}
 
 \subsection{Rückruf}
 \begin{frame}
 	\frametitle{Rückruf}
+	\includegraphics[scale=0.365,centered]{pictures/anruf2}
 	\begin{itemize}[<+->]
 		\item Remote identity behält nach hangup den \texttt{messagingStub} %(\texttt{conversation.bye})
 	\end{itemize}
-	\includegraphics[scale=0.365,centered]{pictures/anruf2}
+
 \end{frame}
 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
 \section{Fehlerbehebung}
-\subsection{Teillösung}
+\subsection{Teillösung 1}
 \begin{frame}
-	\frametitle{Teillösung}
+	\frametitle{Teillösung 1}
+	\begin{exampleblock}{Conversation.prototype.acceptInvitation Zeile 308}
+	\lstinputlisting[language=html,	linewidth=\textwidth,frame=none]{src/conv.proto.acc.txt}
+	\end{exampleblock}
+
+	\begin{exampleblock}{Conversation.prototype.close Zeile 498}
+	\lstinputlisting[language=html,	linewidth=\textwidth,frame=none]{src/conv.proto.bye.txt}
+	\end{exampleblock}
+	
+	\begin{exampleblock}{Conversation.prototype.bye Zeile 522}
+	\lstinputlisting[language=html,	linewidth=\textwidth,frame=none]{src/conv.proto.bye.txt}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Teillösung 1}
+	\includegraphics[scale=0.365,centered]{pictures/close_bye_ah_ab}
+\end{frame}
+\begin{frame}
+	\frametitle{Teillösung 1}
+	\includegraphics[scale=0.365,centered]{pictures/close_bye_ah_ba}
+\end{frame}
+\begin{frame}
+	\frametitle{Teillösung 1}
+	\includegraphics[scale=0.365,centered]{pictures/close_bye_bh_ab}
+\end{frame}
+\begin{frame}
+	\frametitle{Teillösung 1}
+	\includegraphics[scale=0.365,centered]{pictures/close_bye_bh_ba} %funzt
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Teillösung 1}
+	\begin{itemize}
+		\item Rückruf jetzt möglich, jedoch nicht
+		\begin{itemize}
+			\item Wenn der Anrufer aufhängt
+			\item Wenn der Angerufene auflegt und der Anrufer erneut anruft
+		\end{itemize}
+		\item Kopieren des \texttt{messagingStub}s löst das Problem nur teilweise beim Auflegen des Angerufenen
+		\item 1/4 Probleme gelöst, jedoch auch 1/4 Probleme erzeugt
+		\item Nicht funktionstüchtig
+		\begin{itemize}
+			\item A hangup \&  A call  B
+			\item A hangup \&  B call  A
+			\item B hangup \&  A call  B
+		\end{itemize}
+		\item Funktionstüchtig
+		\begin{itemize}
+			\item B hangup \&  B call  A
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+	\begin{exampleblock}{Nullstub umgehen}
+		\begin{lstlisting}
+			Identity.prototype.resolve = function( callback ) {
+			    var that = this;
+			    console.log( "resolving identity: " + this.rtcIdentity);
+			    // if ( ! this.messagingStub.impl ) {
+			    if ( ! this.messagingStub || ! this.messagingStub.impl ) {
+			        var knownStub = Idp.getInstance().getResolvedStub(this.messagingStubLibUrl);
+		\end{lstlisting}
+		\end{exampleblock}
+\end{frame}
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% conversation.bye hier
+\subsection{Teillösung 2}
+\begin{frame}
+	\frametitle{Teillösung 2}
 	\begin{itemize}[<+->]
-		\item Im remote participant
+		\item Im angerufenen remote participant wird nur noch bei \texttt{Conversation.prototype.bye} der Stub verändert
 	\end{itemize}
 
 	\begin{exampleblock}{Conversation.prototype.acceptInvitation}
@@ -202,29 +300,42 @@ Hochschule für Telekommunikation Leipzig \\ % Your institution for the title pa
 	\begin{exampleblock}{Conversation.prototype.bye}
 	\lstinputlisting[language=html,	linewidth=\textwidth,frame=none]{src/conv.proto.bye.txt}
 	\end{exampleblock}
-
 \end{frame}
 
 \begin{frame}
-	\frametitle{Teillösung}
-	\includegraphics[scale=0.365,centered]{pictures/fix1}
+	\frametitle{Teillösung 2}
+	\includegraphics[scale=0.365,centered]{pictures/bye_bh_ab}
+\end{frame}
+\begin{frame}
+	\frametitle{Teillösung 2}
+	\includegraphics[scale=0.365,centered]{pictures/bye_bh_ba}
+\end{frame}
+\begin{frame}
+	\frametitle{Teillösung 2}
+	\includegraphics[scale=0.365,centered]{pictures/bye_ah_ab}
+\end{frame}
+\begin{frame}
+	\frametitle{Teillösung 2}
+	\includegraphics[scale=0.365,centered]{pictures/bye_ah_ba} %schlägt fehl
 \end{frame}
 
 \begin{frame}
-	\frametitle{Teillösung}
+	\frametitle{Teillösung 2}
 	\begin{itemize}
-		\item Recall jetzt möglich
-		\item Da originaler \texttt{messagingStub} gespeichert wird, muss kein erneuter Download erfolgen
-		\item Kopieren des \texttt{messagingStub}s löst das Problem nur bei eigenem hangup
-		\item 
+		\item Rückruf jetzt möglich, jedoch nicht
+		\begin{itemize}
+			\item Wenn der Anrufer aufhängt
+		\end{itemize}
+		\item $3/4$ Problemen behoben
 	\end{itemize}
 \end{frame}
 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \subsection{Lösung}
 \begin{frame}
 	\frametitle{Lösung}
-	\includegraphics[scale=0.365,centered]{pictures/fix2}
+	\includegraphics[scale=0.365,centered]{pictures/fix_komplett}
 \end{frame}
 
 
@@ -249,6 +360,20 @@ Hochschule für Telekommunikation Leipzig \\ % Your institution for the title pa
 
 
 
+
+\section{Zusatzaufgabe}
+\begin{frame}
+	\frametitle{Zusatzaufgabe}
+
+\end{frame}
+
+
+
+\section{Zusammenfassung}
+\begin{frame}
+	\frametitle{Zusammenfassung}
+
+\end{frame}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.27)  14 FEB 2015 23:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.27)  16 FEB 2015 00:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1122,50 +1122,68 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 166.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3
 
-] [4
-
 ]
+<pictures/messagingStub.png, id=166, 643.40375pt x 86.3225pt>
+File: pictures/messagingStub.png Graphic file (type png)
+
+<use pictures/messagingStub.png>
+Package pdftex.def Info: pictures/messagingStub.png used on input line 190.
+(pdftex.def)             Requested size: 302.3998pt x 40.57156pt.
+
+<pictures/nomsgstub.png, id=168, 500.87125pt x 86.3225pt>
+File: pictures/nomsgstub.png Graphic file (type png)
+
+<use pictures/nomsgstub.png>
+Package pdftex.def Info: pictures/nomsgstub.png used on input line 190.
+(pdftex.def)             Requested size: 235.40952pt x 40.57156pt.
+
+Overfull \vbox (4.23639pt too high) detected at line 190
+ []
+
+[4
+
+ <./pictures/messagingStub.png> <./pictures/nomsgstub.png>]
 Package epstopdf Info: Source file: <pictures/anruf1.eps>
-(epstopdf)                    date: 2015-02-14 13:27:13
-(epstopdf)                    size: 182753 bytes
+(epstopdf)                    date: 2015-02-15 23:20:40
+(epstopdf)                    size: 193517 bytes
 (epstopdf)             Output file: <pictures/anruf1-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-14 13:27:54
-(epstopdf)                    size: 48193 bytes
+(epstopdf)                    date: 2015-02-15 23:21:03
+(epstopdf)                    size: 51816 bytes
 (epstopdf)             Command: <repstopdf --outfile=pictures/anruf1-eps-conver
 ted-to.pdf pictures/anruf1.eps>
-(epstopdf)             \includegraphics on input line 179.
+(epstopdf)             \includegraphics on input line 201.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/anruf1-eps-converted-to.pdf, id=169, 842.14626pt x 487.8225pt>
+<pictures/anruf1-eps-converted-to.pdf, id=200, 842.14626pt x 487.8225pt>
 File: pictures/anruf1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/anruf1-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/anruf1-eps-converted-to.pdf used on input lin
-e 179.
+e 201.
 (pdftex.def)             Requested size: 307.38725pt x 178.05745pt.
  [5
 
  <./pictures/anruf1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <pictures/anruf2.eps>
-(epstopdf)                    date: 2015-02-14 13:27:28
-(epstopdf)                    size: 198229 bytes
+(epstopdf)                    date: 2015-02-15 23:20:55
+(epstopdf)                    size: 211435 bytes
 (epstopdf)             Output file: <pictures/anruf2-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-14 13:27:55
-(epstopdf)                    size: 53263 bytes
+(epstopdf)                    date: 2015-02-15 23:21:04
+(epstopdf)                    size: 57824 bytes
 (epstopdf)             Command: <repstopdf --outfile=pictures/anruf2-eps-conver
 ted-to.pdf pictures/anruf2.eps>
-(epstopdf)             \includegraphics on input line 188.
+(epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/anruf2-eps-converted-to.pdf, id=202, 842.14626pt x 541.02126pt>
+<pictures/anruf2-eps-converted-to.pdf, id=232, 842.14626pt x 541.02126pt>
 File: pictures/anruf2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/anruf2-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/anruf2-eps-converted-to.pdf used on input lin
-e 188.
+e 211.
 (pdftex.def)             Requested size: 307.38725pt x 197.47523pt.
 
-Overfull \vbox (8.23534pt too high) detected at line 188
+Overfull \vbox (4.23534pt too high) detected at line 211
  []
 
 [6
@@ -1177,56 +1195,229 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 )
-(./src/conv.proto.acc.txt) (./src/conv.proto.bye.txt) [7
+(./src/conv.proto.acc.txt) (./src/conv.proto.bye.txt) (./src/conv.proto.bye.txt
+) [7
 
 ]
-Package epstopdf Info: Source file: <pictures/fix1.eps>
-(epstopdf)                    date: 2015-02-14 19:05:25
-(epstopdf)                    size: 204577 bytes
-(epstopdf)             Output file: <pictures/fix1-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-14 19:05:35
-(epstopdf)                    size: 55263 bytes
-(epstopdf)             Command: <repstopdf --outfile=pictures/fix1-eps-converte
-d-to.pdf pictures/fix1.eps>
-(epstopdf)             \includegraphics on input line 211.
+Package epstopdf Info: Source file: <pictures/close_bye_ah_ab.eps>
+(epstopdf)                    date: 2015-02-15 22:50:28
+(epstopdf)                    size: 222769 bytes
+(epstopdf)             Output file: <pictures/close_bye_ah_ab-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-02-15 22:51:03
+(epstopdf)                    size: 60919 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/close_bye_ah_ab-e
+ps-converted-to.pdf pictures/close_bye_ah_ab.eps>
+(epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/fix1-eps-converted-to.pdf, id=268, 842.14626pt x 541.02126pt>
-File: pictures/fix1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use pictures/fix1-eps-converted-to.pdf>
-Package pdftex.def Info: pictures/fix1-eps-converted-to.pdf used on input line 
-211.
-(pdftex.def)             Requested size: 307.38725pt x 197.47523pt.
+<pictures/close_bye_ah_ab-eps-converted-to.pdf, id=299, 841.1425pt x 549.05125p
+t>
+File: pictures/close_bye_ah_ab-eps-converted-to.pdf Graphic file (type pdf)
+ <use pictures/close_bye_ah_ab-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/close_bye_ah_ab-eps-converted-to.pdf used on 
+input line 235.
+(pdftex.def)             Requested size: 307.02087pt x 200.40622pt.
  [8
 
- <./pictures/fix1-eps-converted-to.pdf>] [9
+ <./pictures/close_bye_ah_ab-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/close_bye_ah_ba.eps>
+(epstopdf)                    date: 2015-02-15 22:50:38
+(epstopdf)                    size: 224961 bytes
+(epstopdf)             Output file: <pictures/close_bye_ah_ba-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-02-15 22:51:05
+(epstopdf)                    size: 61469 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/close_bye_ah_ba-e
+ps-converted-to.pdf pictures/close_bye_ah_ba.eps>
+(epstopdf)             \includegraphics on input line 239.
+Package epstopdf Info: Output file is already uptodate.
 
-]
+<pictures/close_bye_ah_ba-eps-converted-to.pdf, id=332, 841.1425pt x 549.05125p
+t>
+File: pictures/close_bye_ah_ba-eps-converted-to.pdf Graphic file (type pdf)
+ <use pictures/close_bye_ah_ba-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/close_bye_ah_ba-eps-converted-to.pdf used on 
+input line 239.
+(pdftex.def)             Requested size: 307.02087pt x 200.40622pt.
+ [9
 
-! LaTeX Error: File `pictures/fix2' not found.
+ <./pictures/close_bye_ah_ba-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/close_bye_bh_ab.eps>
+(epstopdf)                    date: 2015-02-15 22:50:45
+(epstopdf)                    size: 222769 bytes
+(epstopdf)             Output file: <pictures/close_bye_bh_ab-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-02-15 22:51:06
+(epstopdf)                    size: 61002 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/close_bye_bh_ab-e
+ps-converted-to.pdf pictures/close_bye_bh_ab.eps>
+(epstopdf)             \includegraphics on input line 243.
+Package epstopdf Info: Output file is already uptodate.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.228 \end{frame}
-                 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<pictures/close_bye_bh_ab-eps-converted-to.pdf, id=365, 842.14626pt x 547.04375
+pt>
+File: pictures/close_bye_bh_ab-eps-converted-to.pdf Graphic file (type pdf)
+ <use pictures/close_bye_bh_ab-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/close_bye_bh_ab-eps-converted-to.pdf used on 
+input line 243.
+(pdftex.def)             Requested size: 307.38725pt x 199.67348pt.
+ [10
 
-[10
+ <./pictures/close_bye_bh_ab-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/close_bye_bh_ba.eps>
+(epstopdf)                    date: 2015-02-15 22:50:52
+(epstopdf)                    size: 212321 bytes
+(epstopdf)             Output file: <pictures/close_bye_bh_ba-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-02-15 22:51:08
+(epstopdf)                    size: 58027 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/close_bye_bh_ba-e
+ps-converted-to.pdf pictures/close_bye_bh_ba.eps>
+(epstopdf)             \includegraphics on input line 247.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/close_bye_bh_ba-eps-converted-to.pdf, id=399, 842.14626pt x 541.02126
+pt>
+File: pictures/close_bye_bh_ba-eps-converted-to.pdf Graphic file (type pdf)
+ <use pictures/close_bye_bh_ba-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/close_bye_bh_ba-eps-converted-to.pdf used on 
+input line 247.
+(pdftex.def)             Requested size: 307.38725pt x 197.47523pt.
+ [11
+
+ <./pictures/close_bye_bh_ba-eps-converted-to.pdf>]
+\openout4 = `tlabs-stub.vrb'.
+
+ (./tlabs-stub.vrb) [12
 
 ]
 \openout4 = `tlabs-stub.vrb'.
 
- (./tlabs-stub.vrb) [11
+ (./tlabs-stub.vrb)
+[13
 
-] [12
+] (./src/conv.proto.acc.txt) (./src/conv.proto.bye.txt) [14
 
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [13
+]
+Package epstopdf Info: Source file: <pictures/bye_bh_ab.eps>
+(epstopdf)                    date: 2015-02-15 22:26:12
+(epstopdf)                    size: 220717 bytes
+(epstopdf)             Output file: <pictures/bye_bh_ab-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-15 22:51:09
+(epstopdf)                    size: 60239 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/bye_bh_ab-eps-con
+verted-to.pdf pictures/bye_bh_ab.eps>
+(epstopdf)             \includegraphics on input line 308.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/bye_bh_ab-eps-converted-to.pdf, id=524, 842.14626pt x 547.04375pt>
+File: pictures/bye_bh_ab-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pictures/bye_bh_ab-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/bye_bh_ab-eps-converted-to.pdf used on input 
+line 308.
+(pdftex.def)             Requested size: 307.38725pt x 199.67348pt.
+ [15
+
+ <./pictures/bye_bh_ab-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/bye_bh_ba.eps>
+(epstopdf)                    date: 2015-02-15 22:26:05
+(epstopdf)                    size: 215279 bytes
+(epstopdf)             Output file: <pictures/bye_bh_ba-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-15 22:51:10
+(epstopdf)                    size: 58772 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/bye_bh_ba-eps-con
+verted-to.pdf pictures/bye_bh_ba.eps>
+(epstopdf)             \includegraphics on input line 312.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/bye_bh_ba-eps-converted-to.pdf, id=557, 842.14626pt x 541.02126pt>
+File: pictures/bye_bh_ba-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pictures/bye_bh_ba-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/bye_bh_ba-eps-converted-to.pdf used on input 
+line 312.
+(pdftex.def)             Requested size: 307.38725pt x 197.47523pt.
+ [16
+
+ <./pictures/bye_bh_ba-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/bye_ah_ab.eps>
+(epstopdf)                    date: 2015-02-15 22:26:20
+(epstopdf)                    size: 220717 bytes
+(epstopdf)             Output file: <pictures/bye_ah_ab-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-15 22:51:12
+(epstopdf)                    size: 60146 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/bye_ah_ab-eps-con
+verted-to.pdf pictures/bye_ah_ab.eps>
+(epstopdf)             \includegraphics on input line 316.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/bye_ah_ab-eps-converted-to.pdf, id=590, 841.1425pt x 549.05125pt>
+File: pictures/bye_ah_ab-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pictures/bye_ah_ab-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/bye_ah_ab-eps-converted-to.pdf used on input 
+line 316.
+(pdftex.def)             Requested size: 307.02087pt x 200.40622pt.
+ [17
+
+ <./pictures/bye_ah_ab-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/bye_ah_ba.eps>
+(epstopdf)                    date: 2015-02-15 22:26:27
+(epstopdf)                    size: 223675 bytes
+(epstopdf)             Output file: <pictures/bye_ah_ba-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-15 22:51:13
+(epstopdf)                    size: 60774 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/bye_ah_ba-eps-con
+verted-to.pdf pictures/bye_ah_ba.eps>
+(epstopdf)             \includegraphics on input line 320.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/bye_ah_ba-eps-converted-to.pdf, id=624, 841.1425pt x 549.05125pt>
+File: pictures/bye_ah_ba-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pictures/bye_ah_ba-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/bye_ah_ba-eps-converted-to.pdf used on input 
+line 320.
+(pdftex.def)             Requested size: 307.02087pt x 200.40622pt.
+ [18
+
+ <./pictures/bye_ah_ba-eps-converted-to.pdf>] [19
+
+]
+Package epstopdf Info: Source file: <pictures/fix_komplett.eps>
+(epstopdf)                    date: 2015-02-15 18:32:31
+(epstopdf)                    size: 226443 bytes
+(epstopdf)             Output file: <pictures/fix_komplett-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2015-02-15 18:34:32
+(epstopdf)                    size: 62450 bytes
+(epstopdf)             Command: <repstopdf --outfile=pictures/fix_komplett-eps-
+converted-to.pdf pictures/fix_komplett.eps>
+(epstopdf)             \includegraphics on input line 339.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/fix_komplett-eps-converted-to.pdf, id=687, 842.14626pt x 547.04375pt>
+File: pictures/fix_komplett-eps-converted-to.pdf Graphic file (type pdf)
+<use pictures/fix_komplett-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/fix_komplett-eps-converted-to.pdf used on inp
+ut line 339.
+(pdftex.def)             Requested size: 307.38725pt x 199.67348pt.
+ [20
+
+ <./pictures/fix_komplett-eps-converted-to.pdf>]
+\openout4 = `tlabs-stub.vrb'.
+
+ (./tlabs-stub.vrb) [21
+
+] [22
+
+] [23
+
+] [24
+
+ </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [25
 
 ]
 \tf@nav=\write7
@@ -1238,45 +1429,44 @@ If that doesn't work, type  X <return>  to quit.
 \tf@snm=\write9
 \openout9 = `tlabs-stub.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
  (./tlabs-stub.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 515.
 Package rerunfilecheck Info: File `tlabs-stub.out' has not changed.
-(rerunfilecheck)             Checksum: A88A465F5BDB9C1F75B16576395AA6FE;384.
+(rerunfilecheck)             Checksum: FAB72EF6E9731FE7AB3B5A9211554FD1;618.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 515.
  ) 
 Here is how much of TeX's memory you used:
- 19966 strings out of 493304
- 350732 string characters out of 6139870
- 483425 words of memory out of 5000000
- 22890 multiletter control sequences out of 15000+600000
- 13628 words of font info for 51 fonts, out of 8000000 for 9000
+ 20154 strings out of 493304
+ 354791 string characters out of 6139870
+ 538727 words of memory out of 5000000
+ 23032 multiletter control sequences out of 15000+600000
+ 15232 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,15n,66p,399b,1661s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation14} has been referenced but does not ex
-ist, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb>
-Output written on tlabs-stub.pdf (13 pages, 276302 bytes).
+ 49i,15n,66p,399b,1650s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb>
+Output written on tlabs-stub.pdf (25 pages, 823971 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 441 compressed objects within 5 object streams
- 36 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 927 PDF objects out of 1000 (max. 8388607)
+ 813 compressed objects within 9 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

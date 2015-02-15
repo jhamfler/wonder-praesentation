@@ -1,2 +1,2 @@
 toIdentity.originalStub = toIdentity.messagingStub;	
-toidentity.messagingStub = that.myParticipant.identity.messagingStub;
+toIdentity.messagingStub = that.myParticipant.identity.messagingStub;
